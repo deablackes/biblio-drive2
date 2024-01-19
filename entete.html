@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <!-- Métadonnées de la page -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Styles Bootstrap depuis CDN -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+
+<body>
+  <!-- Conteneur principal de la page -->
+  <div class="container-fluid">
+    <!-- Ligne Bootstrap -->
+    <div class="row">
+      <!-- Colonne Bootstrap (prend toute la largeur sur tous les écrans) -->
+      <div class="col-md-12">
+        <!-- Barre de navigation Bootstrap -->
+        <nav class="navbar navbar-expand-sm navbar-light bg-light">
+          
+          <!-- Formulaire de recherche -->
+          <form action="liste_livre.php" method="post" class="form-inline flex-grow-1">
+            <!-- Champ de saisie pour le nom de l'auteur -->
+            <input class="form-control mr-2" type="text" placeholder="Nom de l'auteur" name="recherche">
+            
+            <!-- Bouton de soumission pour la recherche -->
+            <button type="submit" class="btn btn-primary">Recherche &#128269;</button>
+          </form>
+          
+          <!-- Formulaire pour accéder au panier -->
+          <form action="panier.php" method="post">
+            <!-- Bouton pour accéder au panier -->
+            <button type="submit" class="btn btn-primary ml-2">Panier &#128722;</button>
+          </form>
+
+        <!-- Fin de la barre de navigation -->
+        </nav>
+      <!-- Fin de la colonne Bootstrap -->
+      </div>
+    <!-- Fin de la ligne Bootstrap -->
+    </div>
+  <!-- Fin du conteneur principal -->
+  </div>
+</body>
+
+</html>
