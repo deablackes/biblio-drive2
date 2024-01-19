@@ -65,6 +65,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['ajouterAuPanier'])) {
     <h1 class="mb-4">Détail du Livre</h1>
 
     <?php if ($detail_livre): ?>
+
+        // ddddddgi
         <div class="card">
             <img src="covers/<?= $detail_livre["image"]; ?>" class="card-img-top custom-thumbnail" alt="<?= $detail_livre["titre"]; ?>">
             <div class="card-body">
